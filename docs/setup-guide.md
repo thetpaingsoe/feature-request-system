@@ -44,7 +44,7 @@ This will setup your default admin account and sample 50 data for the sample fea
     cd ..
 
 That is! now project is successfully setup in your local.  
-- [main doc](./../README.md)  
+> [🏠 Home](./../README.md)  
 
 
 

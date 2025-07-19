@@ -48,7 +48,11 @@ Please check the step by step guide of [Development Setup Guide](./docs/developm
 
 <br />
 
-## How to Push to GitHub
+## Git Commit and Push Guide
+
+After you have done some development, you have to commit and push to github.  
+So, I have create a small guide how to commit and push to submodules.  
+Please check [Git Commit & Push Guide](./docs/git-push-guide.md).
 
 <br />
 

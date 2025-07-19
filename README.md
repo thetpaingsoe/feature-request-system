@@ -15,13 +15,18 @@ Firstly, you need to clone this repository
 
     git clone https://github.com/thetpaingsoe/feature-request-system.git
 
-This repository contains two sub modules, so **you have to init those submodules.**
+After you clone the repository, you have to do the following things
 
-If you want to check the detail step by step guide to init the submodules,  
-please check this [guide](./docs/setup-guide.md)
+- Init submodules  
+- Install composer packages  
+- Install npm packages for both backend and frontend.  
 
+For the detail step by step setup guide, please check this [Guide](./docs/setup-guide.md)
 
-Here is the repository link for submodules. But you don't have to clone as individually. 
+<br />
+  
+
+This repository contains two sub modules, But you don't have to clone as individually. 
 1. [Backend](https://github.com/thetpaingsoe/feature-request-system-be)
 2. [Frontend](https://github.com/thetpaingsoe/feature-request-system-fe)
 

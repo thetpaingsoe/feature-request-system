@@ -1,3 +1,5 @@
+> [🏠 Home](./../README.md)
+ 
 # Git Push Guide
 It is completely same with normal git.  
 You just need to navigate the correct folder to do the commit and push.  

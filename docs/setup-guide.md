@@ -35,10 +35,13 @@ This one also we will checkout to main branch.
     cd ..
 
 ## Setup Database and Run Seed Migration
-This will setup your default admin account and sample 50 data for the sample feature request.
+This will setup your default admin account and sample 50 data for the sample feature request.  
+*If it ask about confirmation, just select "yes".*
 
+    cd backend
     php artisan migrate
     php artisan db:seed
+    cd ..
 
 That is! now project is successfully setup in your local.  
 - [main doc](./../README.md)  

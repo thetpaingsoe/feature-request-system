@@ -2,6 +2,12 @@
 For the development mode, we will have another 2 sections.  
 One is for the backend and one is for the frontend.
 
+## Prerequisites
+1. **Must** Complete the [setup guide](./setup-guide.md)
+2. Install Docker Desktop ( If you want to use docker )
+
+<br />
+
 ## Backend setup
 For the backend development setup, you may need to choose one for PHP  
 `local on Host` or ` Docker`

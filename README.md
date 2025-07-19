@@ -19,9 +19,16 @@ After you clone the repository, you have to do the following things
 
 - Init submodules  
 - Install composer packages  
-- Install npm packages for both backend and frontend.  
+- Install npm packages for both backend and frontend.
+- Database migration and seeding  
 
 For the detail step by step setup guide, please follow this [Setup Guide](./docs/setup-guide.md)
+
+<br />  
+
+> After complete this setup, you can use this account to login to backend   
+> email : admin@gmail.com   
+> password : admin12345
 
 <br />
   

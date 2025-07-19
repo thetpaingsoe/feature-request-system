@@ -11,17 +11,20 @@ This project is a comprehensive demo application designed to streamline the proc
 
 ## Setup Instructions  
 
-Guide : [Setup Guide](./docs/setup-guide.md)
+Firstly, you need to clone this repository
 
-Follow these steps to get the project up and running on your local machine.
+    git clone https://github.com/thetpaingsoe/feature-request-system.git
 
-### 1. Clone the Repository  
+This repository contains two sub modules, so **you have to init those submodules.**
 
-    https://github.com/thetpaingsoe/feature-request-system.git
+If you want to check the detail step by step guide to init the submodules,  
+please check this [guide](./docs/setup-guide.md)
 
-This project has 2 submodule
+
+Here is the repository link for submodules. But you don't have to clone as individually. 
 1. [Backend](https://github.com/thetpaingsoe/feature-request-system-be)
 2. [Frontend](https://github.com/thetpaingsoe/feature-request-system-fe)
+
 
 ## Docker Setup
 

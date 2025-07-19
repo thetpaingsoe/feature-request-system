@@ -94,8 +94,11 @@ After that you need to run the following
       docker-compose --env-file ./frontend/.env up --build frontend
 
 Now you can start your frontend development.
-  
+
 <br />  
+
+> [🏠 Home](./../README.md)
+ 
 <br />  
 <br />  
 <br />  

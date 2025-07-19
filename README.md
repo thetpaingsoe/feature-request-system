@@ -21,27 +21,46 @@ After you clone the repository, you have to do the following things
 - Install composer packages  
 - Install npm packages for both backend and frontend.  
 
-For the detail step by step setup guide, please check this [Setup Guide](./docs/setup-guide.md)
+For the detail step by step setup guide, please follow this [Setup Guide](./docs/setup-guide.md)
 
 <br />
   
+## Docker Setup
+This project comes pre-configured with Docker for easy development. You'll be running two services:
 
+- Backend (Laravel + Inertia)
+- Frontend (Vue.js)
+
+I have prepared for you the doc to setup easily. Please check this doc to build the image and run the container.    
+Here is the step by step guide of [Docker Setup Guide](./docs/docker-guide.md)
+  
+<br />
+
+## Development Setup Guide
+
+This project supports both Docker and local development for seamless workflow. Choose your preferred approach:
+
+- Backend (PHP/Laravel/Vite/Vue) → Docker or local
+- Frontend (Vue/Vite) → Docker or local 
+
+For the detail instruction,  
+Please check the step by step guide of [Development Setup Guide](./docs/development-setup-guide.md)
+
+<br />
+
+## How to Push to GitHub
+
+<br />
+
+## Sub Modules Links
 This repository contains two sub modules, But you don't have to clone as individually. 
 1. [Backend](https://github.com/thetpaingsoe/feature-request-system-be)
 2. [Frontend](https://github.com/thetpaingsoe/feature-request-system-fe)
 
+<br />  
+<br />  
+<br />  
+<br />  
+<br />  
 
-## Docker Setup
-In this project, I already prepare the docket compose for you.  
-So, that you just have to build image and run the container in your local PC.  
 
-After build, it will create two images and one container.  
-One is for backend and one is for frontend. 
-
-Before you build the image, there are a few configuration you may need to change.  
-So, Please check this doc to build the image and run the container.  
-Here is the step by step guide of [Docker Guide](./docs/docker-guide.md)
-
-## Up and Running to start local development
-
-## How to Push to GitHub

@@ -11,6 +11,8 @@ This project is a comprehensive demo application designed to streamline the proc
 
 ## Setup Instructions  
 
+Guide : [Setup Guide](./docs/setup-guide.md)
+
 Follow these steps to get the project up and running on your local machine.
 
 ### 1. Clone the Repository  

@@ -34,7 +34,8 @@ In that case, your images are created and container is running.
 
 So, you just have to click the 8000:80 ( Backend ) and 5173:80 ( Frontend )
 
-Now you can test the applications in your browser. 
+Access the application at  
+  http://localhost:8000 and http://localhost:5173
 
 <br />  
 

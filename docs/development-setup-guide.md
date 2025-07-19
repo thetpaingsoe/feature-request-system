@@ -1,3 +1,5 @@
+> [🏠 Home](./../README.md)
+ 
 # Development Setup Guide
 For the development mode, we will have another 2 sections.  
 One is for the backend and one is for the frontend.

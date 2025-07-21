@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "9b11fd5c-adb7-47f9-875b-7b0817f13366",
+		"name": "Feature Request System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46922452"
+	},
+	"item": [
+		{
+			"name": "Post Feature Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"protocolVersion": "auto",
+				"followRedirects": false,
+				"disableUrlEncoding": true,
+				"disableCookies": false,
+				"insecureHTTPParser": true,
+				"followOriginalHttpMethod": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Host",
+						"value": "127.0.0.1:8000",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Title",
+							"description": "Not nullable, max 255",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"description": "Not nullable, correct email format",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is description for the feature.",
+							"description": "Not nullable, min-10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://psx-station.panacea-soft.co/api/feature-requests",
+					"protocol": "https",
+					"host": [
+						"psx-station",
+						"panacea-soft",
+						"co"
+					],
+					"path": [
+						"api",
+						"feature-requests"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

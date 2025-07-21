@@ -18,8 +18,31 @@ For the development, please check this [Development Setup Guide](./docs/developm
 ## For Builder Mode
 
 ### Build Image
-For the builder mode, you don't need to change any thing.  
-Just have to run the following command.  
+For the builder mode,  
+Please check the ENV variables in both backend and frontend
+
+For Backend, it should be,  
+**APP_ENV** must be **production**  
+`path : /backend/.env`
+
+    APP_NAME=Laravel
+    APP_ENV=production
+    APP_KEY=base64:/pThyXiBFsDbPkSQ35agDvr21EpzxyM/X44+7ZBA0E4=
+    APP_DEBUG=true
+    APP_URL=http://localhost:8000
+    ASSET_URL=
+    ....
+
+For Frontend, it should be,  
+**VITE_API_URL** must be **localhost** for local build  
+`path : /frontend/.env`
+
+    VITE_APP_ENV=production
+    VITE_API_URL=http://localhost:8000/api
+    FE_PORT=5174
+    CONTAINER_PORT=80   
+
+After that run the following command.
 
     docker-compose up --build
 

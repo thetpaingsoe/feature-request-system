@@ -26,12 +26,13 @@ For the detail step by step setup guide, please follow this [Setup Guide](./docs
 
 <br />  
 
-> After complete this setup, you can use this account to login to backend   
+> After complete this setup, you can use this account to login
+> For the backend   
 > email : admin@gmail.com   
 > password : admin12345
 
 
-> For the Frontend
+> For the Frontend  
 > email : user1@gmail.com   
 > password : user12345
 

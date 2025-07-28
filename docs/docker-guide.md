@@ -22,19 +22,20 @@ For the builder mode,
 Please check the ENV variables in both backend and frontend
 
 For Backend, it should be,  
-**APP_ENV** must be **production**  
+Please make sure, you update below attributes.   
 `path : /backend/.env`
 
-    APP_NAME=Laravel
+    ...
     APP_ENV=production
-    APP_KEY=base64:/pThyXiBFsDbPkSQ35agDvr21EpzxyM/X44+7ZBA0E4=
-    APP_DEBUG=true
-    APP_URL=http://localhost:8000
-    ASSET_URL=
+    ...
+    APP_URL=http://localhost:8000/
+    ASSET_URL="${APP_URL}public"
+    ....
+    SANCTUM_STATEFUL_DOMAINS=localhost
     ....
 
 For Frontend, it should be,  
-**VITE_API_URL** must be **localhost** for local build  
+Please make sure, you update below attributes.   
 `path : /frontend/.env`
 
     VITE_APP_ENV=production

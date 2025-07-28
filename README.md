@@ -30,6 +30,11 @@ For the detail step by step setup guide, please follow this [Setup Guide](./docs
 > email : admin@gmail.com   
 > password : admin12345
 
+
+> For the Frontend
+> email : user1@gmail.com   
+> password : user12345
+
 <br />
   
 ## Docker Setup

@@ -69,10 +69,17 @@ Please check [Git Commit & Push Guide](./docs/git-push-guide.md).
 
 <br />
 
+## Server Deployment Guide  
+
+For the backend : [Backend Deployment Guide](./docs/backend-deployment-guide.md)
+
+<br />
+
 ## Sub Modules Links
 This repository contains two sub modules, But you don't have to clone as individually. 
 1. [Backend](https://github.com/thetpaingsoe/feature-request-system-be)
 2. [Frontend](https://github.com/thetpaingsoe/feature-request-system-fe)
+
 
 <br />  
 <br />  

@@ -71,7 +71,11 @@ Please check [Git Commit & Push Guide](./docs/git-push-guide.md).
 
 ## Server Deployment Guide  
 
-For the backend : [Backend Deployment Guide](./docs/backend-deployment-guide.md)
+For the backend :  
+	[Backend Deployment Guide](./docs/backend-deployment-guide.md)   
+ 
+For the frontend :   
+	[Frontend Deployment Guide](./docs/frontend-deployment-guide.md)
 
 <br />
 

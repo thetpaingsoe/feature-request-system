@@ -84,6 +84,13 @@ This repository contains two sub modules, But you don't have to clone as individ
 1. [Backend](https://github.com/thetpaingsoe/feature-request-system-be)
 2. [Frontend](https://github.com/thetpaingsoe/feature-request-system-fe)
 
+<br />
+
+## Postman API Testing  
+
+You need to set the correct token before testing with the postman  
+Here is the guide to [Setup Postman Token](./docs/postman-guide.md)	
+
 
 <br />  
 <br />  

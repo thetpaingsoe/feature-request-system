@@ -7,80 +7,1030 @@
 	},
 	"item": [
 		{
-			"name": "Post Feature Request",
-			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {
-					"accept": true
-				},
-				"protocolVersion": "auto",
-				"followRedirects": false,
-				"disableUrlEncoding": true,
-				"disableCookies": false,
-				"insecureHTTPParser": true,
-				"followOriginalHttpMethod": false
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					},
-					{
-						"key": "Host",
-						"value": "127.0.0.1:8000",
-						"type": "text",
-						"disabled": true
-					},
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "title",
-							"value": "Title",
-							"description": "Not nullable, max 255",
-							"type": "text"
+			"name": "Feedbacks",
+			"item": [
+				{
+					"name": "Reply Suggestion",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
 						},
-						{
-							"key": "email",
-							"value": "test@gmail.com",
-							"description": "Not nullable, correct email format",
-							"type": "text"
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "description",
-							"value": "This is description for the feature.",
-							"description": "Not nullable, min-10",
-							"type": "text"
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "note",
+									"value": "This is reply from client.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions/9/reply",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"9",
+								"reply"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "https://psx-station.panacea-soft.co/api/feature-requests",
-					"protocol": "https",
-					"host": [
-						"psx-station",
-						"panacea-soft",
-						"co"
-					],
-					"path": [
-						"api",
-						"feature-requests"
-					]
+				{
+					"name": "Reject Suggestion",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "reviewing",
+									"type": "text"
+								},
+								{
+									"key": "action",
+									"value": "reject",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions/reply/9",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"reply",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Suggestion",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "reviewing",
+									"type": "text"
+								},
+								{
+									"key": "action",
+									"value": "accept",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions/reply/9",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"reply",
+								"9"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Auth User",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/user",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "user12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/login",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "41|xMLe6mEYgXg1dq5g1WEYDgPHZgGtr3Bc0J4qO1Fl17515204",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/logout",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "Countries",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/countries",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Designations",
+			"item": [
+				{
+					"name": "Company Designations",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/desinations",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"desinations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Share Values",
+			"item": [
+				{
+					"name": "Share Values",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/sharevalues",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"sharevalues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feature Requests",
+			"item": [
+				{
+					"name": "Post Feature Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Title",
+									"description": "Not nullable, max 255",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"description": "Not nullable, correct email format",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is description for the feature.",
+									"description": "Not nullable, min-10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/feature-requests",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"feature-requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Submissions",
+			"item": [
+				{
+					"name": "Get Submission",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions/9",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submissions",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|yimsbrgvltvAHxANRQZ51GmRdBvJYjG22zoxeGU42e773b32",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Submission Logs",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|NpdFnOXKPy5GiZa95IROKc4v1GpAF7CgpcS6GoCpd1c86c37",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submission-logs/9",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submission-logs",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Submission",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|yimsbrgvltvAHxANRQZ51GmRdBvJYjG22zoxeGU42e773b32",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"Jeff\",\n    \"email\": \"jeff@gmail.com\",\n    \"company_name\": \"Jeff & Brothers\",\n    \"alternative_company_name\": \"JB\",\n    \"company_designation_id\": 2,\n    \"jurisdiction_of_operation_id\": 4,\n    \"target_jurisdictions\": [\"2\", \"5\", \"6\"],\n    \"number_of_shares\": 1000,\n    \"are_all_shares_issued\": false,\n    \"number_of_issued_shares\": 500,\n    \"share_value_id\": 1,\n    \"shareholders\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\",\n            \"percentage\":50\n        },\n        {\n            \"name\": \"Jane Doe\",\n            \"email\": \"jane@example.com\",\n            \"percentage\":50\n        }\n    ],\n    \"beneficial_owners\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\"\n        }\n    ],\n    \"directors\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Submission",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"protocolVersion": "auto",
+						"followRedirects": false,
+						"disableUrlEncoding": true,
+						"disableCookies": false,
+						"insecureHTTPParser": true,
+						"followOriginalHttpMethod": false
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|yimsbrgvltvAHxANRQZ51GmRdBvJYjG22zoxeGU42e773b32",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "127.0.0.1:8000",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"Jeff\",\n    \"email\": \"jeff@gmail.com\",\n    \"company_name\": \"Jeff & Brothers edit\",\n    \"alternative_company_name\": \"JB\",\n    \"company_designation_id\": 2,\n    \"jurisdiction_of_operation_id\": 4,\n    \"target_jurisdictions\": [\"2\", \"5\", \"6\"],\n    \"number_of_shares\": 1000,\n    \"are_all_shares_issued\": false,\n    \"number_of_issued_shares\": 500,\n    \"share_value_id\": 1,\n    \"shareholders\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\",\n            \"percentage\":50\n        },\n        {\n            \"name\": \"Jane Doe\",\n            \"email\": \"jane@example.com\",\n            \"percentage\":50\n        }\n    ],\n    \"beneficial_owners\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\"\n        }\n    ],\n    \"directors\": [\n        {\n            \"name\": \"jeff\",\n            \"email\": \"jeff@gmail.com\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://psx-station.panacea-soft.co/api/submissions/21",
+							"protocol": "https",
+							"host": [
+								"psx-station",
+								"panacea-soft",
+								"co"
+							],
+							"path": [
+								"api",
+								"submissions",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

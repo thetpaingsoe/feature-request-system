@@ -1,5 +1,13 @@
  # Feature Request System
 
+> Feature Request System — demo app to collect, manage, and approve feature ideas. Users submit ideas, admins review, approve or reject them. Laravel 12 backend + Vue.js frontend with Docker support.
+
+![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?logo=vue.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 This project is a comprehensive demo application designed to streamline the process of collecting, managing, and approving new feature requests. It provides a structured platform for users to submit ideas and for administrators to review, approve, or reject them, ensuring a clear and efficient product development pipeline.
 
 ## Prerequisites  
